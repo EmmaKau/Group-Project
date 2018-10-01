@@ -1,0 +1,22 @@
+Thalia Barr-Malec
+Sept. 27, 2018
+Software Initial Requirements
+
+For this project, I will be focusing on creating the internal structure for the navigation
+from existing professors to existing feedback threads and the creation of new feeds and sections. 
+	I will now outline what the user’s navigation experience will be once the website is created. 
+  Once the user has selected a professor, they will have a series of classes that they can choose
+  from with a plus tab at the bottom that they can click to add another class. If there are no
+  classes that have been created already for that professor then there will only be a plus tab.
+  Once you click the plus tab there will be a space where you can you can type the name of the
+  class and add it to the system. The user will not be allowed to add if they have not written
+  anything. With in the class there will be the exact same format except, instead of classes there
+  will be topics. Once the topic has been chosen/created there is are feeds, again with the same
+  format. Once in a feed, users can comment or reply to comments. There will be a text box at the
+  top of the page that students can write in and click post in order to add to the discussion.
+  Alternatively they can reply to a comment by pushing a reply button on a comment and writing in
+  a text box. These are all functional requirements. 
+	As for non functional requirements, a time efficient navigation system will be optimized for.
+  In addition, we will have limited time to create this website so we aim to keep it as simple as
+  possible. We also hope to keep the website centered on both creating an improvement mindset for
+  teaching and anonymous feedback. 
