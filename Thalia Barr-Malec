@@ -1,0 +1,74 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of Professor
+ *
+ * @author thaliabarr-malec
+ */
+
+/**
+ * Need to: create constructors, add functions, merge code with Spencer.
+ */
+
+class Professor {
+    private $name;
+    private $classSubject = array();
+    
+    //CREATE CONSTRUCTOR
+    //put your code here
+    
+    //get function for name field variable
+    public function getName() {
+        return $this->name;
+    }
+    
+    //set function for name field variable
+   public function setName($proName){
+      $this->name = $proName;
+    }
+    
+   //get function for classSubject field variable
+    public function getClassSubject(){
+        return $this->classSubject;
+    }
+    
+    public function addClassSubject($subject){
+        $this->classSubject = $subject;
+    }
+    
+}
+
+class Course {
+    private $topics = array();
+    
+    
+    public function getTopics() {
+       return $this->topics;
+    }
+    
+    public function addTopic($topic) {
+        $this->topics = $topic; 
+    }
+}
+
+class Topic {
+    private $feeds = array();
+    
+    public function getFeeds() {
+        return $this->feeds;
+    }
+    
+    public function addFeed($feed) {
+        $this-> feeds = $feed;
+    }
+}
+
+class Feed{
+    private $database;
+}
