@@ -1,0 +1,43 @@
+Thalia Barr-Malec
+Sept. 27, 2018
+Software Initial Requirements
+
+
+For this project, I will be focusing on creating the internal structure for the navigation
+from existing professors to existing feedback threads and the creation of new feeds and sections.
+
+User Requirements
+
+● There must be a searching method for finding a professor
+● There must be a list of classes each professor teaches and you must be able to add classes
+if they are not already listed
+● Within each class there must be a list of topics the user can choose from and the user
+should be able to add a topic
+● Once in a topic there must be a list of feeds and the user must be able to add new feeds
+● With in the feeds there must be an option to comment and reply to comments
+
+Systems Requirements
+
+● Once the user has selected a professor, they will have a series of classes that they can
+choose from with a plus tab at the bottom that they can click to add another class
+● If there are no classes that have been created already for that professor then there will
+only be a plus tab
+● Once you click the plus tab there will be a space where you can you can type the name of
+the class and add it to the system
+● The user will not be allowed to add if they have not written anything
+● With in the class section there will be the same format as with the professor section but
+instead of classes to choose from there will be topics
+● Once the topic has been chosen/created there are feeds, to choose from, again with the
+same format as classes and professors
+● In a feed, users can comment or reply to comments
+● There will be a text box at the top of the page that students can write in and click post in
+order to add to the discussion
+● User can reply to a comment by pushing a reply button on an existing comment and
+writing in a text box
+
+Non-Functional Requirements
+
+● A time efficient navigation system will be optimized for
+● We will have limited time to create this website so we aim to keep it as simple as possible
+● We hope to keep the website centered on both creating an improvement mindset for
+teaching and anonymous feedback

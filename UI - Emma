@@ -1,0 +1,116 @@
+//////////////////////////////TopicsPage.php//////////////////////////////
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <body> 
+        <h1> <center> TOPICS </center></h1>
+        <form action="LecturesPage.php"
+        <p> <center> <input type="submit" value="LECTURES" /> </center> </p>
+        </form>
+        <form action="AssignmentsPage.php"
+         <p> <center> <input type="submit" value="ASSIGNMENTS" /> </center> </p>
+        </from> 
+       <?php
+       
+       
+       ?>
+    </body>
+</html>
+
+//////////////////////////////LecturesPage.php//////////////////////////////
+
+<!DOCTYPE html>
+<!-- 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.`    a   1
+ -->
+<html>
+    <body> 
+        <h1> <center> LECTURES </center></h1>
+        <form action ="CommentPage.php"
+         <p> <center> <input type="submit" value="WEEK 1" /> </center> </p>     
+         <p> <center> <input type="submit" value="WEEK 2" /> </center> </p>
+         <p> <center> <input type="submit" value="WEEK 3" /> </center> </p>
+         <p> <center> <input type="submit" value="WEEK 4" /> </center> </p>
+         <p> <center> <input type="submit" value="WEEK 5" /> </center> </p>
+         <p> <center> <input type="submit" value="WEEK 6" /> </center> </p>
+         <p> <center> <input type="submit" value="WEEK 7" /> </center> </p>
+         <p> <center> <input type="submit" value="WEEK 8" /> </center> </p>
+         <p> <center> <input type="submit" value="WEEK 9" /> </center> </p>
+         <p> <center> <input type="submit" value="WEEK 10"/> </center> </p>
+         <p> <center> <input type="submit" value="WEEK 11"/> </center> </p>
+         <p> <center> <input type="submit" value="WEEK 12"/> </center> </p>
+         <p> <center> <input type="submit" value="WEEK 13"/> </center> </p>
+         <p> <center> <input type="submit" value="WEEK 14"/> </center> </p>
+         <p> <center> <input type="submit" value="WEEK 15"/> </center> </p>
+         <p> <center> <input type="submit" value="WEEK 16"/> </center> </p>
+        <form
+         <?php
+       
+       
+         ?>
+        
+         </body>
+</html>
+
+//////////////////////////////AssignmentsPage.php//////////////////////////////
+<!DOCTYPE html>
+
+<!-- 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ -->
+ <html>
+    <body> 
+        <h1> <center> ASSIGNMENTS </center></h1>
+         <p> <center> <input type="submit" value="GROUP PROJECT" /> </center> </p>
+ 
+ <?php
+ 
+ ?>
+    </body>
+</html>
+
+//////////////////////////////CommentPage.php//////////////////////////////
+
+<!DOCTYPE html>
+    
+<!-- 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+-->
+
+<html>
+<body>
+    <form action ="StoragePage.php" >
+        If you would like your professor to reach out, <br> you can provide your information here: <br> <br> <br>
+        Name: <input type="text" name="name"><br> <br> 
+        E-mail: <input type="text" name="email"><br> <br>
+    <input type="submit">
+    
+<center> Give Your Constructive Comment Here:  <br> <textarea name="comment" rows="6" cols="30"> </textarea> </center>
+    <center> <input type="submit"> </center>
+    
+    
+    </form>
+    <?php
+    ?>
+
+</body>
+</html>
+
+
+
+
+
+
+        
