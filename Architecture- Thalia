@@ -1,0 +1,16 @@
+Professor Object {
+    contains class array [John]
+    
+    }
+    
+Class Object { 
+    contains a list of topics [Lectures]
+    }
+    
+Topic Object {
+     contains a list of feeds [week1, week2, week3.. week5]
+     }
+     
+ Feed Object {
+    contains a querie to access data base of comments
+    }

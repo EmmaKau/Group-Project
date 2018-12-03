@@ -1,0 +1,53 @@
+Gennie Cheatham, Emma Kauzmann, Thalia Barr-Malec,
+ Spencer Balmer-Logan, Sarah McClain
+Software Engineering Requirements Document
+October 10, 2018
+
+Preface: Defines the expected relationship of the document and describe its version history, including a rationale for the creation of a new version and summary of the changes made in each version
+This is the first document that our team is writing about the requirements of our Professor Feedback Website. Before this document our team broke our website into parts: the User Interface split into three parts, System Architecture, and Data Storage and wrote requirements documents on each of these parts. These individual requirements documents specified user requirements, system requirements and defined whether these were functional or nonfunctional. In this document our group will synthesize all of these requirements into a cohesive document to present to possible users. The only time that we will be changing these portions will be if we change the requirements of our website.
+
+Introduction: Describes the need for the system. It should briefly describe the system's functions and explain how it will work with other systems. It should also describe how the system fits into the overall business or strategic objectives of the organization commissioning the software.
+Teachers and professors in both high school and college often work very hard to provide an ideal learning environment and curriculum for their students. Despite this, it can sometimes be challenging to know exactly how to best teach. In addition, teachers often only get feedback at the end of the semester when they are reviewed by students. Because of this, perfecting a curriculum can be a game of guess and check that often takes multiple semesters. There are many instances in which the lack of dialogue between students and teachers becomes detrimental to the success of a learning environment. For example, because professors are experts in a particular field they have difficulties determining what will be challenging and what will be trivial for students who are learning the material for the first time.
+In other cases, professors may want to test out a particular project or essay format that may be more successful or less successful than previous setups. Even if the professor asks the students directly for feedback it can be hard for students to provide constructive criticism without anonymity. Some students may be too afraid to approach their professor, and others might have a hard time verbally articulating their advice. By the time evaluations are given out at the end of the year it is nearly impossible for students to remember all the feedback they intended to give the professor. This hurts both the professor and his or her students as well. The professor is not able to adjust to ensure a better learning environment for the students and the students are suffering in many ways as well whether it be struggling to learn the material or feeling unengaged in the day to day activities.
+Our project will be a website that allows students to instantaneously evaluate professor’s lectures and teaching styles. In addition we will add a section in which students can give their opinions on projects and homework assignments. The website will be an easy to use interface that prompts students for their honest and helpful feedback. This way teachers will be able to adjust their lectures/teaching styles throughout the semester instead of realizing things they could improve on only at the end. This system would not only be useful at the university level but also at the highschool and junior college levels as well. All professors and teachers could benefit from feedback because most want to adjust to fit the needs of students so that they can learn better. Another way that our program could be extremely valuable is for the use within a teaching program of student teachers. These students are hungry for feedback, and our program will allow them to be evaluated by the people they are trying to help, students, instead of their boss or professor.
+
+Glossary: Defines the technical terms used in the document.
+As of right now our team does not have any technical terms that need defining. 
+
+User requirements definition: Describes the services provided for the user. The nonfunctional system requirements should also be described in this section. This description may use natural language, diagrams, or other notations that are understandable to customers.
+The user will be able to give immediate feedback to their professors. The user will be able to do this through a feed set up based on the topic in which they want to give feedback on. A student will be able to access a list of weeks and give comments on the lecture style of the professor for that week. Or a student can provide feedback on an assignment, i.e. how it was presented, how valuable it is for learning purposes or any other constructive comments. These are all functional requirements because they have to do with how the system is going to be used. 
+
+System architecture: presents high-level overview of the anticipated system architecture, showing the distribution of functions across system modules.
+The user will first be provided with a search bar in which the user will search for a professor. If the professor is not already in the system there is an option to add them. Once the professor is chosen, the user can choose a class already in the system or add a new class that the professor teaches. Each class will have a list of topics that contains the same format of adding and selecting that will exist for classes. Topics will, too, have the same format but instead will contain a series of feeds. Each feed will be a conversation thread where students can either comment or reply to a comment.
+System requirements specification: Describes the function and nonfunctional requirements in more detail. If necessary further detail may also be added to the nonfunctional requirements. Interfaces to other systems may be defined.
+	The functional requirements of the system revolve around each page leading to the next page. The menu will start with a search option to find a professor. If the professor that the user wants is not found, the user will be given the option to add the professor to our website, add the class they are taking and then navigate the website accordingly in order to give feedback. If there is a professor found, the user will click on that professor and the system will then need to lead the user to another page with a list of courses that this professor teaches. If the user’s class is not listed, the user will need to be able to add a class themselves. After a class is selected, the system will take the user to the Topics menu that lists out the different topics like Lectures and Assignments. If the users wants a different topic, the user will be able to insert their own Topic. Once the user clicks on the a Topic they will be led to the Feed of the topic. The Feed for Lectures are a list of weeks, one for each in a semester. If the user selects the assignments Topic, the user will be prompted to insert their own Feed type like, “Group Project 1,” for example. Once the user has navigated to a Feed, now the user will be able to add a comment to the specific feed. These are all functional requirements. 
+Our team will be using the programming language JavaScript to write our website. In addition the IDE, Eclipse will be used to construct our project. Each member of the team will complete their portion separately and then merge the portions together on GitHub to create a cohesive, smooth website and program. The user will also remain anonymous when posting in a Feed. These are all nonfunctional because they have to do with the constraints of our project. These are the organizational constraints of our project and this means that our team will only be able to write code in JavaScript, and code on the IDE of Eclipse in order to ensure that our program is cohesive. This website should be very easy to use and should have almost no training time as well. These are nonfunctional requirements even though we do not really have requirements for training or ease of use.
+
+System models: Includes graphical system models showing the relationships between the system components and the system and its environment. Examples of possible models are object models, data-flow models, or semantic data models
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+System evolution: Describes the fundamental assumptions on which the system is based, and any anticipated changes due to hardware evolution, changing user needs, and so on.
+One of our main assumptions is that information about professors and the classes that they teach will be readily accessible for our team to use when constructing our website. In addition, we assume that this information will be available to students when they use our website to add a professor or add a class that they teach. Our group also assumes that students will use our website responsibly. The website will have a little blurb about the expected correct usage of our program, including the concept that our website is for feedback not for derogatory comments. If students continue to use our website under inappropriate motivations, our group should think about adding a security portion of our website that would take down offensive, rude, and unhelpful comments. Another assumption of our website is that users would like to choose whether or not to remain anonymous. If students almost unanimously desire to be anonymous then it might be to the programs benefit to just eliminate the choice and made everyone anonymous. If this is the case it would simplify the program and ultimately speed up operations. 
+
+Appendices: Provide detailed, specific information that is related to the application being developed.
+As of right now our team does not have any appendices that we will be referencing.
+
+Index: Several indexes can be included, index to diagrams, index of functions and so forth
+	As of right now our team does not have any indices that we will be referencing.
+
+
+
