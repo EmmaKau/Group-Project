@@ -106,7 +106,7 @@ class Topic {
 
 class Feed{
     private $name;
-    private $database;
+    private $comments = array();
     
     //constructor
     public function __construct($feedName, $databaseName){
@@ -129,4 +129,114 @@ class Feed{
     }
 }
 
+class DataBase extends SQLite3 {
+    function _construct() {
+        $this -> open('rating1.db');
+    }
+}
+
+$data = new DataBase();
+
+if (!$data) {
+    echo $data -> lastErrorMsg();
+}
+else {
+    echo "Opened database sucessfully\n";
+}  
+
+/**
+ * Prof - fname, lname, pid
+ * Course - cname, cid
+ * Teaches - pid, cid
+ * Topic - tname, tid
+ * Feed - week_fid
+ * Comment - pid,cid, tid, week_fid, comment
+ */
+   $sql =<<<EOF
+        SELECT * from Prof;
+   
+EOF;
+$profTable = $data -> query($sql); 
+function getProID($fName, $lName){
+  while ($row = $GLOBALS['profTable'] -> fetchArray(SQLITE3_ASSOC)) {
+       if (strcmp($row['fname'], $fName) and strcmp($row['lname'], $lName)) {
+           return $row['pid'];
+       }
+   }
+}
+   
+//##############################################   
+   
+
+    $sql2 =<<<EOF
+        SELECT * from Course;
+EOF;
+       
+$courseTable = $data -> query($sql2); 
+   //cname, cid
+function getCorID($course){
+  while ($row = $GLOBALS['courseTable'] -> fetchArray(SQLITE3_ASSOC)) {
+       if (strcmp($row['cname'], $course)) {
+           return $row['cid'];
+       }
+   }
+}
+
+//############################################
+
+//Topic - tname, tid
+    $sql3 =<<<EOF
+        SELECT * from Topic;
+EOF;
+       
+$topicTable = $data -> query($sql3); 
+   // * Comment - pid, cid, tid, week_fid, comment
+
+function getTopicID($topic){
+  while ($row = $GLOBALS['topicTable'] -> fetchArray(SQLITE3_ASSOC)) {
+       if (strcmp($row['tname'], $topic)) {
+           return $row['tid'];
+       }
+   }
+}
+//#########################################
+
+// * Comment - pid, cid, tid, week_fid, comment
+
+    $sql4 =<<<EOF
+        SELECT * from Comment;
+EOF;
+       
+$commentTable = $data -> query($sql4); 
+
+function getComments($pID, $cID, $tID, $week){
+        
+     $comments = array();
+   while ($row = $GLOBALS['commentTable'] -> fetchArray(SQLITE3_ASSOC)){
+       
+       if (strcmp($row['pid'], $pID) and strcmp($row['cid'], $cID) and strcmp($row['tid'], $tID) and strcmp($row['week_fid'], $week)) {
+           array_push($comments, $row['comment']);
+       }
+   }
+      return   $comments;
+   }
+        
+//QUERIES   
+
+//Gets professor name and queries for Professor ID -> return an int of the professor ID
+
+//Gets a professor ID and query for course names -> return list of courses taught by professor
+
+//??Gets a course and queries for a list of topic names -> return a list of topic names
+        // If above works then create : Gets topic name -> returns topic ID?
+
+//Gets a topic name and queries for hash -> return an int hash of the Topic ID
+
+//Gets a topic name and create a topic given name and week 1 through 15 -> return a Topic object
+
+//Gets professor ID, course ID, topic ID and feed number (1-15) and queries for comments -> returns all comments relating matching given information
+
+//SIMPLIFIED: returns all the comments in the form of an arraylist of strings
+           
+?>
 
