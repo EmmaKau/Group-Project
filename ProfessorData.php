@@ -1,15 +1,11 @@
 <?php
 
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * This class is ProfessorData which constucts an array of professor objects. For this project we simplified it by only having 
+ * one professor, John Goettsche.
  */
 
-/**
- * Description of ProfessorData
- *
- * @author mccla
+ * @author Sarah McClain
  */
 require "Professor.php";
 
@@ -19,7 +15,6 @@ class ProfessorData {
     function __construct() {
         $this->professors = array(
             new Professor("1", "John", "Goettsche", "Computer Science"),
-            //new Professor("2", "America", "Chambers", "Computer Science"),
         );
     }
 }
