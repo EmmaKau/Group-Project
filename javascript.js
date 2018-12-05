@@ -1,7 +1,7 @@
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * The search bar is using PHP AJAX which means it needs some background javascript in order to work. This file is providing
+ * some of the background work on autocomplete. I learned how to do this from some of the tutorials Netbeans has online
+ Author: Sarah McClain
  */
 
 var req;
