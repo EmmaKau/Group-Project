@@ -2,7 +2,7 @@
 
 /*
  * This class is ProfessorData which constucts an array of professor objects. For this project we simplified it by only having 
- * one professor, John Goettsche.
+ * one professor, John Goettsche
  */
 
  * @author Sarah McClain
