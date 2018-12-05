@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title> Evaluate your Education </title>
+        <script type="text/javascript" src="javascript.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head> 
+    <style>
+     body {
+        background-color: #FFDEAD;
+     }
+
+    </style> 
+    <body onload="init()">
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Evaluate your Education</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <!--<li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    -->
+                </ul>
+            </div>
+        </nav>
+    <div class="container">
+        <h3>This website allows you to leave feedback for your professors on certain projects they have assigned. </h3>
+        <h3> In the form below enter the name of the professor you wish you comment on. For example, try typing in "John Goettsche"
+            then click on one of the selections to see professor details.</h3>
+    </div>
+        <!--<div class="container">
+            <blockquote class="blockquote-reverse">
+            <p>"Taking constructive criticism from others is required to get to the next level".</p>
+            <footer>Wendy Starland</footer>
+            </blockquote>
+        </div>
+        -->
+    <div class="container">
+        <form name="autofillform" action="autocomplete.php"> 
+            <table border="0" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Professor Name:</strong></td>
+                        <td><input type="text"
+                            size="40"
+                            id="complete-field"
+                            onkeyup="doCompletion();"> </td>
+                    </tr>
+                    <tr>
+                        <td id ="auto-row" colspan="2"> 
+                            <table class="popupBox" style="display: none"></table>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+        
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4"></div>
+            <p></p>
+        <div class="col-lg-8"></div>
+            <p></p>
+      </div>
+        
+       <div class="row">
+          <div class="col-lg-4"></div>
+            <p></p>
+          <div class="col-lg-4"></div>
+            <p></p>
+          <div class="col-lg-4"></div>
+            <p></p>
+      </div>
+        
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4"></div>
+           <div class="col-lg-4">
+            <blockquote class="blockquote-reverse">
+                <p>"Taking constructive criticism from others is required to get to the next level".</p>
+                <footer>Wendy Starland</footer>
+            </blockquote>
+
+           </div>   
+        </div>
+    </div>
+   
+    </body>
+</html>
