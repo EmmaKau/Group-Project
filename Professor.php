@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This is the professor class which creates an object of a professor. It takes in an id, first name, last name and subject.
+ * This is the professor class which creates an object of a professor. It takes in an id, first name, last name and subject
  */
 
 /**
