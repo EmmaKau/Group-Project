@@ -18,17 +18,13 @@
     <!-- Here is where this info will be stored as a user bio or something, maybe generate an automatic email to the prof-->
         </form>
 
-  <center>   <!--form action ="ThankYouPage.php"-->
-                   <!-- I want this to link to a different page-->
-Please Give Your Constructive Comment Here:  <br> 
-    <textarea name="comment" rows="6" cols="30"> </textarea> </center>
-  
-    <center> <input type="submit" > </center> <br>
-  <!--  </form>-->
-<center> 
-    <!--
-    Here is your Constructive Comment: <br><br>
-         Here I want to make the comment show up post clicking on the button --> 
+  <center>   
+        <form action = "CommentFeed2.php" method ="get">
+        <center> Please Give Your Constructive Comment Here: <br> <br>
+        <textarea name="comment" rows="6" cols="30"> </textarea>  <br> <br>
+        <input type="submit" class="btn btn-default" value="Submit"> <br> <br> <br>
+    </form>
+
     
         You can also reach out directly to your professor by email, just click here: 
         <a href="mailto:jgoettsche@pugetsound.edu"> <input type = "submit" value= "Send Email" >  </a> 
