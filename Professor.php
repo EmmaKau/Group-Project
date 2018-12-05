@@ -1,15 +1,13 @@
 <?php
 
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * This is the professor class which creates an object of a professor. It takes in an id, first name, last name and subject.
  */
 
 /**
  * Description of Professor
  *
- * @author mccla
+ * @author Sarah McClain
  */
 class Professor {
     public $id;
